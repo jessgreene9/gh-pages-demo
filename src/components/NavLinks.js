@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavLink = ({ currentPage, handlePageChange, page }) => {
   const onClick = () => handlePageChange(page);
@@ -8,7 +9,7 @@ const NavLink = ({ currentPage, handlePageChange, page }) => {
 
   return (
     <li className="nav-item">
-      <a {...data}>{page}</a>
+      <Link {...data}>{page}</Link>
     </li>
   );
 };
